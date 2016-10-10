@@ -1,0 +1,14 @@
+.fill{
+  width:100%
+}
+body{
+  width:100%;
+  height:100%;
+  background-color: #bdc3c7;
+}
+.login .wrapper .brand{
+  margin-top:-30px;
+}
+.login .wrapper .brand h1 .logo-icon{
+  margin-bottom: 10px;
+}
