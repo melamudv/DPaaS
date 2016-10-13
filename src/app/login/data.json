@@ -1,7 +1,7 @@
 {
-  "people":[{"name":"Joe","address":"Test Street1"},
-            {"name":"Peter","address":"Test Street2"},
-            {"name":"Tom","address":"Test Street3"},
-            {"name":"Jack","address":"Test Street4"},
-            {"name":"Bob","address":"Test Street5"}]
+  "user":[{"name":"Joe XXX","email":"test@test.com","pass":111},
+    {"name":"Peter YYY","email":"test1@test.com","pass":111},
+    {"name":"Tom ZZZ","email":"test2@test.com","pass":111},
+    {"name":"Jack KKK","email":"test3@test.com","pass":111},
+    {"name":"Bob SSS","email":"test4@test.com","pass":111}]
 }

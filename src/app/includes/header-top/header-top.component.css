@@ -1,0 +1,12 @@
+.img-position{
+  width: 8%;
+  height: auto;
+  position: relative;
+  top: 2px;
+  right: -1px;
+  border-radius: 48%;
+}
+.navbar-default
+{
+  border-bottom: 4px solid #000;
+}
