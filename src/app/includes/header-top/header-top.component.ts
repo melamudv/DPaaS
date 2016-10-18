@@ -10,7 +10,7 @@ export class HeaderTopComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.logUser = localStorage.getItem('auth_token');
+    this.logUser = localStorage.getItem('user');
   }
   signOut(){
     localStorage.removeItem('id_token');

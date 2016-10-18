@@ -1,7 +1,7 @@
 {
-  "user":[{"name":"Joe XXX","email":"test@test.com","pass":111},
-    {"name":"Peter YYY","email":"test1@test.com","pass":111},
-    {"name":"Tom ZZZ","email":"test2@test.com","pass":111},
-    {"name":"Jack KKK","email":"test3@test.com","pass":111},
-    {"name":"Bob SSS","email":"test4@test.com","pass":111}]
+  "user":[{"name":"Joe XXX","email":"test@test.com","pass":"111"},
+    {"name":"Peter YYY","email":"test1@test.com","pass":"111"},
+    {"name":"Tom ZZZ","email":"test2@test.com","pass":"111"},
+    {"name":"Jack KKK","email":"test3@test.com","pass":"111"},
+    {"name":"Bob SSS","email":"test4@test.com","pass":"111"}]
 }
