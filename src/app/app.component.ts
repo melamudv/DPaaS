@@ -6,6 +6,7 @@ import {HeaderTopComponent} from  './includes/header-top/header-top.component'
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
   directives: [MenuLeftComponent, HeaderTopComponent]
+
 })
 export class AppComponent {
   title = 'app works!';

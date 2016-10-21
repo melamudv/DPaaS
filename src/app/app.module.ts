@@ -11,7 +11,7 @@ import { LoginComponent } from './login/login.component';
 import { CatalogComponent } from './dashboard/catalog/catalog.component';
 import { MenuLeftComponent } from './includes/menu-left/menu-left.component';
 import { HeaderTopComponent } from './includes/header-top/header-top.component';
-import { SearchUserPipe } from './login/search-user.pipe';
+import { DRecoveryComponent } from './dashboard/d-recovery/d-recovery.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,7 @@ import { SearchUserPipe } from './login/search-user.pipe';
     CatalogComponent,
     MenuLeftComponent,
     HeaderTopComponent,
-    SearchUserPipe
+    DRecoveryComponent
   ],
   imports: [
     BrowserModule,

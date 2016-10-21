@@ -1,4 +1,8 @@
 <div class='login container fill'>
+  <div class="alert alert-info">
+    Username: test@test.com<br />
+    Password: 111
+  </div>
   <div class='wrapper'>
     <div class='row'>
       <div class='col-lg-12'>
@@ -16,16 +20,19 @@
 
     <div class='row'>
       <div class='col-lg-12'>
-        <form role="form" (ngSubmit)="forSubmit()">
+        <form name="form" role="form" (ngSubmit)="f.form.valid && forSubmit()"  #f="ngForm" novalidate>
           <fieldset class='text-center'>
             <legend>Login</legend>
-            <div class='form-group'>
-              <input class='form-control' placeholder='Email address' id="username" type='text' #username [(ngModel)]="data.username" name="username">
+            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
+              <input class='form-control' placeholder='Email address' id="username" type='text' #username="ngModel" [(ngModel)]="data.username" name="username" required>
+              <div *ngIf="f.submitted && !username.valid" class="help-block">Email is required</div>
             </div>
-            <div class='form-group'>
-              <input class='form-control' placeholder='Password' type='password'  id="password"  #password [(ngModel)]="data.password" name="password">
+            <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+              <input class='form-control' placeholder='Password' type='password'  id="password"  #password="ngModel" [(ngModel)]="data.password" name="password" required>
+              <div *ngIf="f.submitted && !password.valid" class="help-block">Password is required</div>
             </div>
             <div>
+              <div *ngIf="error" class="alert alert-danger">{{error}}</div>
               <div class='checkbox'>
                 <label>
                   <input type='checkbox'>
@@ -33,7 +40,7 @@
                 </label>
               </div>
               <!--<a class="btn btn-default" type="submit"  [routerLink]="['/dashboard']">Sign in</a>-->
-              <button class="btn btn-default" type="submit" >Sign in</button>
+              <button class="btn btn-info" type="submit" >Sign in</button>
               <br>
               <div class="text-left col-xs-8" style="padding-left:0px;padding-top:10px;font-size:11px;"><a  [routerLink]="['/catalog/backup']">Forgot password?</a></div>
               <div class="text-right col-xs-4" style="padding-right: 0px;padding-top:10px;font-size:11px;"><a  [routerLink]="['/catalog/backup']">Register</a></div>

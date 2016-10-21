@@ -1,0 +1,48 @@
+{
+  "DataVM": [{
+    "name": "My_Test_App",
+    "items": [{
+      "name": "Test VM 001",
+      "sys": "win",
+      "id": "9a18ffe9f148"
+    }, {
+      "name": "Test VM 003",
+      "sys": "win",
+      "id": "de3a49a458cc"
+    }, {
+      "name": "Test VM 005",
+      "sys": "lin",
+      "id": "92973f4cfbfc"
+    }]
+  }, {
+    "name": "CRM - Prod",
+    "items": [{
+      "name": "DB Server 01",
+      "sys": "win",
+      "id": "9a18ffe9f147"
+    }, {
+      "name": "DB Server 02",
+      "sys": "lin",
+      "id": "92973f4cfbfw"
+    }, {
+      "name": "App Server 02",
+      "sys": "win",
+      "id": "b06bbb86d271"
+    }]
+  }, {
+    "name": "CRM - Test",
+    "items": [{
+      "name": "Test DB 1",
+      "sys": "win",
+      "id": "9a18ffe9f143"
+    }, {
+      "name": "Test DB 3",
+      "sys": "lin",
+      "id": "92973f4cfbfi"
+    }, {
+      "name": "Test App 1",
+      "sys": "win",
+      "id": "b06bbb86d271"
+    }]
+  }]
+}

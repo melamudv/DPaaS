@@ -1,0 +1,83 @@
+<div class='main page'>
+  <app-header-top></app-header-top>
+  <div id='wrapper'>
+    <!-- Sidebar -->
+    <section id='sidebar'>
+      <app-menu-left></app-menu-left>
+    </section>
+
+    <!-- Tools -->
+    <section id='tools'>
+      <ul class='breadcrumb' id='breadcrumb'>
+        <li class='title'>Catalog »  <a  [routerLink]="['/dashboard/catalog']">Data Protection</a> » Disaster Recovery
+        </li>
+      </ul>
+      <div id='toolbar'>
+      </div>
+    </section>
+    <!-- Content -->
+    <div id='content'>
+      <div class="row">
+        <div class='panel panel-default grid'>
+          <div class='panel-heading'>
+            <i class='icon-table icon-large'></i>
+            Bordered Table
+          </div>
+          <div class='panel-body'>
+            <table class='table table-bordered'>
+              <thead>
+              <tr>
+                <th class="title-top">
+                  Protected Applications
+                  <table class="col-xs-12">
+                    <tr>
+                      <td class="col-xs-6 title-second">Group</td>
+                      <td class="col-xs-6 title-second">Server</td>
+                    </tr>
+                  </table>
+                </th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor='let data of DataVM'>
+                <td style="padding-left:0px;padding-right:0px" class="remove-td">
+                  <table class="col-xs-12 group-server">
+                    <tr class="border-down">
+                      <td class="col-xs-6" style="vertical-align: text-top;padding-left: 15px;font-weight: bold">{{data.name}}</td>
+                      <td class="col-xs-6" style="padding-right:15px;padding-left:0px;">
+                        <table class="col-xs-12">
+                          <tr *ngFor="let server of data.items">
+                            <td style="padding-left:0px;" class="name-server">{{server.name}}</td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+              </tr>
+              <!--<tr>-->
+                <!--<td>2</td>-->
+                <!--<td>Jacob</td>-->
+                <!--<td>Thornton</td>-->
+                <!--<td>@fat</td>-->
+              <!--</tr>-->
+              <!--<tr>-->
+                <!--<td>3</td>-->
+                <!--<td>Larry</td>-->
+                <!--<td>the Bird</td>-->
+                <!--<td>@twitter</td>-->
+              <!--</tr>-->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
