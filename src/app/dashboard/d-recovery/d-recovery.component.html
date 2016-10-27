@@ -21,12 +21,12 @@
         <div class='panel panel-default grid'>
           <div class='panel-heading'>
             <i class='icon-table icon-large'></i>
-            Bordered Table
+            Disaster Recovery
           </div>
           <div class='panel-body'>
             <div>
               <ul class="list-inline">
-                <li>
+                <li class="col-xs-4" style="vertical-align: top">
                   <table class='table table-bordered'>
                     <thead>
                     <tr>
@@ -58,26 +58,60 @@
                         </table>
                       </td>
                     </tr>
-                    <!--<tr>-->
-                    <!--<td>2</td>-->
-                    <!--<td>Jacob</td>-->
-                    <!--<td>Thornton</td>-->
-                    <!--<td>@fat</td>-->
-                    <!--</tr>-->
-                    <!--<tr>-->
-                    <!--<td>3</td>-->
-                    <!--<td>Larry</td>-->
-                    <!--<td>the Bird</td>-->
-                    <!--<td>@twitter</td>-->
-                    <!--</tr>-->
                     </tbody>
                   </table>
                 </li>
-                <li>
-                  <datepicker [(ngModel)]="data.date" [expanded]="false" [opened]=true></datepicker>
+                <li class="col-xs-4">
+                  <div>
+                    <div class="row text-center">
+                      <div class="col-xs-4">
+                        <div class="btn-group">
+                          <div class="btn btn-primary" (click)="decrement()">
+                            «
+                          </div>
+                          <div class="btn btn-default" (click)="today()">
+                            Today
+                          </div>
+                          <div class="btn btn-primary" (click)="increment()">
+                            »
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-8">
+                        <h3 style="margin-top:0px;">{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+                      </div>
+                      <!--<div class="col-md-4">-->
+                      <!--<div class="btn-group">-->
+                      <!--<div class="btn btn-primary" (click)="view = 'month'" [class.active]="view === 'month'">Month</div>-->
+                      <!--<div class="btn btn-primary" (click)="view = 'week'" [class.active]="view === 'week'">Week</div>-->
+                      <!--<div class="btn btn-primary" (click)="view = 'day'" [class.active]="view === 'day'">Day</div>-->
+                      <!--</div>-->
+                      <!--</div>-->
+                    </div>
+                    <br>
+                    <div [ngSwitch]="view">
+                      <mwl-calendar-month-view
+                        *ngSwitchCase="'month'"
+                        [viewDate]="viewDate"
+                        [events]="events"
+                        [activeDayIsOpen]="activeDayIsOpen"
+                        (dayClicked)="dayClicked($event.day)">
+                      </mwl-calendar-month-view>
+                      <mwl-calendar-week-view
+                        *ngSwitchCase="'week'"
+                        [viewDate]="viewDate"
+                        [events]="events">
+                      </mwl-calendar-week-view>
+                      <mwl-calendar-day-view
+                        *ngSwitchCase="'day'"
+                        [viewDate]="viewDate"
+                        [events]="events">
+                      </mwl-calendar-day-view>
+                    </div>
+                  </div>
                 </li>
-                <li>
-                  3
+                <li class="col-xs-4" style="vertical-align: top">
+                  <app-available-backups></app-available-backups>
                 </li>
               </ul>
             </div>

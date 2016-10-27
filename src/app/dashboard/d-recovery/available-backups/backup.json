@@ -1,0 +1,66 @@
+{
+  "Backups": [{
+    "id": "2016-10-19T00:00:00",
+    "items": [{
+      "date": "2016-10-19T12:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f148",
+      "size": "41.3 GB",
+      "status": "true"
+    }, {
+      "date": "2016-10-19T14:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f149",
+      "size": "49.3 GB",
+      "status": "true"
+    }, {
+      "date": "2016-10-19T15:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f143",
+      "size": "40.3 GB",
+      "status": "false"
+    }]
+  }, {
+    "id": "2016-10-18T00:00:00",
+    "items": [{
+      "date": "2016-10-18T12:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f148",
+      "size": "41.3 GB",
+      "status": "true"
+    }, {
+      "date": "2016-10-18T14:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f149",
+      "size": "49.3 GB",
+      "status": "true"
+    }, {
+      "date": "2016-10-18T15:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f143",
+      "size": "40.3 GB",
+      "status": "false"
+    }]
+  }, {
+    "id": "2016-10-20T00:00:00",
+    "items": [{
+      "date": "2016-10-20T12:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f148",
+      "size": "41.3 GB",
+      "status": "true"
+    }, {
+      "date": "2016-10-20T14:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f149",
+      "size": "49.3 GB",
+      "status": "true"
+    }, {
+      "date": "2016-10-20T15:00:00",
+      "sys": "win",
+      "id": "9a18ffe9f143",
+      "size": "40.3 GB",
+      "status": "false"
+    }]
+  }]
+}
